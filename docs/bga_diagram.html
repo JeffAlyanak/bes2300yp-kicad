@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+.divTable{
+	display: table;
+	width: 100%;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	display: table-cell;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px dotted #99999975;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
+}
+
+.bdt {
+	border-top: 3px solid #5e5e5e;
+}
+.bdl {
+	border-left: 3px solid #5e5e5e;
+}
+.bdr {
+	border-right: 3px solid #5e5e5e;
+}
+.bdb {
+	border-bottom: 3px solid #5e5e5e;
+}
+
+.label, .nopad {
+	border: none;
+}
+.notconnected {
+	background-color: rgb(49, 49, 49);
+	color: lightgray;
+}
+.ground {
+	background-color: lightgray;
+}
+.power {
+	background-color: lightcoral;
+}
+.gpio {
+	background-color: lightgreen;
+}
+.audio {
+	background-color: lightblue;
+}
+		</style>
+	</head>
+	<body>
+		<div class="divTable">
+			<div class="divTableBody">
+			<div class="divTableRow">
+				<div class="divTableCell label"></div>
+				<div class="divTableCell label">A</div>
+				<div class="divTableCell label">B</div>
+				<div class="divTableCell label">C</div>
+				<div class="divTableCell label">D</div>
+				<div class="divTableCell label">E</div>
+				<div class="divTableCell label">F</div>
+				<div class="divTableCell label">G</div>
+				<div class="divTableCell label">H</div>
+				<div class="divTableCell label">J</div>
+				<div class="divTableCell label">K</div>
+				<div class="divTableCell label">L</div>
+				<div class="divTableCell label">M</div>
+				<div class="divTableCell label"></div>
+			</div>
+			<div class="divTableRow">
+				<div class="divTableCell label">10</div>
+				<div class="divTableCell bdt bdl power">VCODEC_HPPA</div>
+				<div class="divTableCell bdt power">VMEM</div>
+				<div class="divTableCell bdt power">VBAT</div>
+				<div class="divTableCell bdt">LX3</div>
+				<div class="divTableCell bdt">LX2</div>
+				<div class="divTableCell bdt ground">PGND</div>
+				<div class="divTableCell bdt">LX1</div>
+				<div class="divTableCell bdt power">VCORE</div>
+				<div class="divTableCell bdt power">VANA_BUCK</div>
+				<div class="divTableCell bdt power">VIO</div>
+				<div class="divTableCell bdt">USB_DN</div>
+				<div class="divTableCell bdt bdr">USB_DP</div>
+				<div class="divTableCell label">10</div>
+			</div>
+			<div class="divTableRow">
+				<div class="divTableCell label">9</div>
+				<div class="divTableCell bdl audio">LOUT_RP</div>
+				<div class="divTableCell power">VCHG_R</div>
+				<div class="divTableCell power">VBAT_SENSE</div>
+				<div class="divTableCell">LED1</div>
+				<div class="divTableCell gpio">GPIO_20</div>
+				<div class="divTableCell gpio">GPIO_21</div>
+				<div class="divTableCell">MIC5_P</div>
+				<div class="divTableCell">MIC5_N</div>
+				<div class="divTableCell">VANA</div>
+				<div class="divTableCell gpio">GPIO_26</div>
+				<div class="divTableCell power">VUSB</div>
+				<div class="divTableCell bdr gpio">GPIO_17</div>
+				<div class="divTableCell label">9</div>
+			</div>
+			<div class="divTableRow">
+				<div class="divTableCell label">8</div>
+				<div class="divTableCell bdl audio">LOUT_RN</div>
+				<div class="divTableCell">POWKEY</div>
+				<div class="divTableCell bdl bdt"></div>
+				<div class="divTableCell bdt"></div>
+				<div class="divTableCell bdt"></div>
+				<div class="divTableCell bdt"></div>
+				<div class="divTableCell bdt"></div>
+				<div class="divTableCell bdt"></div>
+				<div class="divTableCell bdt"></div>
+				<div class="divTableCell bdt bdr"></div>
+				<div class="divTableCell power">VUSB_CAP</div>
+				<div class="divTableCell bdr gpio">GPIO_16</div>
+				<div class="divTableCell label">8</div>
+			</div>
+			<div class="divTableRow">
+				<div class="divTableCell label">7</div>
+				<div class="divTableCell bdl audio">LOUT_LN</div>
+				<div class="divTableCell">RESET</div>
+				<div class="divTableCell bdl"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell bdr"></div>
+				<div class="divTableCell gpio">GPIO_15</div>
+				<div class="divTableCell bdr" gpio>GPIO_27</div>
+				<div class="divTableCell label">7</div>
+			</div>
+			<div class="divTableRow">
+				<div class="divTableCell label">6</div>
+				<div class="divTableCell bdl audio">LOUT_LP</div>
+				<div class="divTableCell">ADC1/LDE2</div>
+				<div class="divTableCell bdl"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell bdt bdl">REFN_R</div>
+				<div class="divTableCell bdt">REFN_L</div>
+				<div class="divTableCell bdt">AVSS_GMIC</div>
+				<div class="divTableCell bdt bdr">AVSS_REFN</div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell bdr"></div>
+				<div class="divTableCell">VANA</div>
+				<div class="divTableCell bdr notconnected">NC</div>
+				<div class="divTableCell label">6</div>
+			</div>
+			<div class="divTableRow">
+				<div class="divTableCell label">5</div>
+				<div class="divTableCell bdl power">VCODEC</div>
+				<div class="divTableCell">ADC0</div>
+				<div class="divTableCell bdl"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell bdb bdl ground">GND</div>
+				<div class="divTableCell bdb ground">GND</div>
+				<div class="divTableCell bdb ground">GND</div>
+				<div class="divTableCell bdb bdr ground">GND</div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell bdr"></div>
+				<div class="divTableCell notconnected">NC</div>
+				<div class="divTableCell bdr notconnected">NC</div>
+				<div class="divTableCell label">5</div>
+			</div>
+			<div class="divTableRow">
+				<div class="divTableCell label">4</div>
+				<div class="divTableCell bdl gpio">GPIO_22</div>
+				<div class="divTableCell power">VMIC2</div>
+				<div class="divTableCell bdl"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell"></div>
+				<div class="divTableCell bdr"></div>
+				<div class="divTableCell ground">GND</div>
+				<div class="divTableCell bdr gpio">GPIO_25</div>
+				<div class="divTableCell label">4</div>
+			</div>
+			<div class="divTableRow">
+				<div class="divTableCell label">3</div>
+				<div class="divTableCell bdl gpio">GPIO_23</div>
+				<div class="divTableCell power">VMIC3</div>
+				<div class="divTableCell bdl bdb"></div>
+				<div class="divTableCell bdb"></div>
+				<div class="divTableCell bdb"></div>
+				<div class="divTableCell bdb"></div>
+				<div class="divTableCell bdb"></div>
+				<div class="divTableCell bdb"></div>
+				<div class="divTableCell bdb"></div>
+				<div class="divTableCell bdb bdr"></div>
+				<div class="divTableCell">VPA_BT</div>
+				<div class="divTableCell bdr">BT_RF</div>
+				<div class="divTableCell label">3</div>
+			</div>
+			<div class="divTableRow">
+				<div class="divTableCell label">2</div>
+				<div class="divTableCell bdl audio">MIC1_N</div>
+				<div class="divTableCell audio">MIC4_N</div>
+				<div class="divTableCell audio">MIC4_P</div>
+				<div class="divTableCell gpio">GPIO_10</div>
+				<div class="divTableCell gpio">GPIO_11</div>
+				<div class="divTableCell gpio">GPIO_12</div>
+				<div class="divTableCell gpio">GPIO_13</div>
+				<div class="divTableCell gpio">GPIO_00</div>
+				<div class="divTableCell gpio">GPIO_01</div>
+				<div class="divTableCell gpio">GPIO_03</div>
+				<div class="divTableCell ground">GND</div>
+				<div class="divTableCell bdr ground">GND</div>
+				<div class="divTableCell label">2</div>
+			</div>
+			<div class="divTableRow">
+				<div class="divTableCell label">1</div>
+				<div class="divTableCell bdb bdl audio">MIC1_P</div>
+				<div class="divTableCell bdb audio">MIC2_P</div>
+				<div class="divTableCell bdb audio">MIC2_N</div>
+				<div class="divTableCell bdb audio">MIC3_N</div>
+				<div class="divTableCell bdb audio">MIC3_P</div>
+				<div class="divTableCell bdb">VCM_CAP</div>
+				<div class="divTableCell bdb gpio">GPIO_14</div>
+				<div class="divTableCell bdb">XTAL_VDD</div>
+				<div class="divTableCell bdb gpio">GPIO_02</div>
+				<div class="divTableCell bdb">XTAL_IN</div>
+				<div class="divTableCell bdb">XTAL_OUT</div>
+				<div class="divTableCell bdb bdr ground">GND</div>
+				<div class="divTableCell label">1</div>
+			</div>
+			<div class="divTableRow">
+				<div class="divTableCell label"></div>
+				<div class="divTableCell label">A</div>
+				<div class="divTableCell label">B</div>
+				<div class="divTableCell label">C</div>
+				<div class="divTableCell label">D</div>
+				<div class="divTableCell label">E</div>
+				<div class="divTableCell label">F</div>
+				<div class="divTableCell label">G</div>
+				<div class="divTableCell label">H</div>
+				<div class="divTableCell label">J</div>
+				<div class="divTableCell label">K</div>
+				<div class="divTableCell label">L</div>
+				<div class="divTableCell label">M</div>
+				<div class="divTableCell label"></div>
+			</div>
+			</div>
+			</div>
+	</body>
+</html>
