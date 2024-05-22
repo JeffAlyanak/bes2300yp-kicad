@@ -15,6 +15,8 @@ _Footprints and 3D models are not yet available, contributations are welcome._
 
 Please note that while every effort has been made to ensure accuracy, the symbols provided in this library may contain errors or inaccuracies. The contributors and maintainers of this library cannot guarantee the correctness or completeness of the information provided. Therefore, users are advised to independently verify the symbols and designs before use.
 
+![BES2300-YP Schematic Symbol](docs/img/symbol.png)
+
 # Contributing
 
 Contributions to improve the accuracy and completeness of the symbols are welcome and encouraged. If you discover any errors or have suggestions for improvements, please consider contributing by submitting a pull request. By contributing to this repository, you agree to license your contributions under the same terms as the original project.
